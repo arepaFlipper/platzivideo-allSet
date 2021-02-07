@@ -1,0 +1,151 @@
+[{
+  "_id": {
+    "$oid": "5db792a4d32f3f565e6458b6"
+  },
+  "name": "ROOT",
+  "email": "root@undefined.sh",
+  "password": "$2b$10$3685aVsQo0u/OcIM1iZimuxppH8QoxT1ILkU.33CDYvSn/.TsrOkW",
+  "isAdmin": true
+},{
+  "_id": {
+    "$oid": "5db792a4d32f3f565e6458b7"
+  },
+  "name": "Jose Maria",
+  "email": "jose@undefined.sh",
+  "password": "$2b$10$57.k4EdsPZjqoE4x97bN.uuNvxf3nH7hDkyjiqq4fTmtQ8RvbDqaa",
+  "isAdmin": false
+},{
+  "_id": {
+    "$oid": "5db792a4d32f3f565e6458b8"
+  },
+  "name": "Maria Jose",
+  "email": "maria@undefined.sh",
+  "password": "$2b$10$woW.tN8C2Lvjm85YeUJtC.xy3rvXBeEOGhH1yAtTRcklMZnQG/H06",
+  "isAdmin": false
+},{
+  "_id": {
+    "$oid": "5dc2e2e49aa6021b85c72289"
+  },
+  "name": "Cristian",
+  "email": "crizy@gmail.com",
+  "password": "$2b$10$OAAFtRtpduylqwFNExv5oetJJLVv2T9d60fmwAkZtobnGeSrxt5Um"
+},{
+  "_id": {
+    "$oid": "5dc2ea059aa6021b85c7228b"
+  },
+  "name": "Cristian",
+  "email": "noprofile@test.com",
+  "password": "$2b$10$GPF/gqne4DBeob4Tl7yOY.LlhAGLG/eu/lgAt3foDtJf2qYflplT."
+},{
+  "_id": {
+    "$oid": "5dc2ecc7d9b2b529da61e486"
+  },
+  "name": "Cristian",
+  "email": "cristian@gmail.com",
+  "password": "$2b$10$D9uX/cCU3M5THzjK9gMfzeg6jZHWAVGegzKQOvXukx0eku3m0RdGm"
+},{
+  "_id": {
+    "$oid": "5dc2ff8ef3099436801d4444"
+  },
+  "name": "Cristian",
+  "email": "cristian@gmail.com",
+  "password": "$2b$10$4gnftCLjXgspKzyeiEetOOEJXG4rcvl902pe1heJr42IM5vfMNEZW"
+},{
+  "_id": {
+    "$oid": "5ebc7912580d2500077fc684"
+  },
+  "name": "Cristian0",
+  "email": "cristian0@hotmail.com",
+  "password": "$2b$10$rYz9b.OvRCz2x90eimo5OuJilg.uqkc61O0vKHtfMD2mQW2Qym7S."
+},{
+  "_id": {
+    "$oid": "5ebc99136a45df00087564c7"
+  },
+  "name": "cristian",
+  "email": "cristianfam@hotmail.com",
+  "password": "$2b$10$QLrXEfq13fQw4ZwyBZ6c3e7UPsXweCGtcBmNB1bVATLtVKycfzpum"
+},{
+  "_id": {
+    "$oid": "5ee418352fec3c0008d1c530"
+  },
+  "name": "Cristian0",
+  "email": "jefferson@gmail.com",
+  "password": "$2b$10$QYJBkbCm3z1hQDpb1fgJUuA/KTUJR56GX7UpUBku2i3mg1S/61TKC"
+},{
+  "_id": {
+    "$oid": "5ee41886d58ed9000741c246"
+  },
+  "name": "Cristian0",
+  "email": "jefferson@gmail.com",
+  "password": "$2b$10$HFOQ.69rnIxnp.0X7mPugO5lJftV1X/Y2hmsub1wA3bbbD7QFslHa"
+},{
+  "_id": {
+    "$oid": "601f60b41aae990008445575"
+  },
+  "name": "fakeUserMock",
+  "email": "ctovar@abexus.com",
+  "password": "$2b$10$7ObhMkLPSHar4phezZ6xG.9.pTikkdTpHzZCCSStOv0KiULVA.8AW"
+},{
+  "_id": {
+    "$oid": "601f61021aae990008445576"
+  },
+  "name": "fakeUserMock",
+  "email": "ctovar@abexus.com",
+  "password": "$2b$10$5mFsjYckVUrDyEUKZJ7W.eJnUHRmO3ejhSlVOZ.6NsNre3a4bZqCK"
+},{
+  "_id": {
+    "$oid": "601f613d1aae990008445577"
+  },
+  "name": "fakeUserMock",
+  "email": "ctovar@abexus.com",
+  "password": "$2b$10$ONo1C9aEm4wPAQvDwo5jpeYvVh3/WSMU5QTewIpsAVmfdJnS9u7Cu"
+},{
+  "_id": {
+    "$oid": "601f618f1aae990008445578"
+  },
+  "name": "fakeUserMock",
+  "email": "ctovar@abexus.com",
+  "password": "$2b$10$EqFSYV2XaF8kMqoTuP0.D.kAq/WGB90SS4VOPBNwuybH0k6dzm./i"
+},{
+  "_id": {
+    "$oid": "601f619e1aae990008445579"
+  },
+  "name": "fakeUserMock",
+  "email": "ctovar@abexus.com",
+  "password": "$2b$10$QxnvxS7FaIzQwJBK5hloh.Dnm0m7wxGRBPLgAWO3eFLQ3rgHUcfwu"
+},{
+  "_id": {
+    "$oid": "601f61bb1aae99000844557a"
+  },
+  "name": "fakeUserMock",
+  "email": "ctovar@abexus.com",
+  "password": "$2b$10$Lryg2eohomCa5l9cIaNeouwGyaKHyOUeJrWouECGwhoNo7kqGaHLO"
+},{
+  "_id": {
+    "$oid": "601f620e1aae99000844557b"
+  },
+  "name": "fakeUserMock",
+  "email": "ctovar@abexus.com",
+  "password": "$2b$10$YVQ/wP92KlYj05TzzUBzN.X2XZdCmsiJ.kLgiTCNXv3o0rD/XC6XS"
+},{
+  "_id": {
+    "$oid": "601f624d1aae99000844557c"
+  },
+  "name": "fakeUserMock",
+  "email": "ctovar@abexus.com",
+  "password": "$2b$10$RGJradNVaIMTkFGvq3eIRekf4VW0iGe1xI2IkTl8pTfwBZ19dgKw2"
+},{
+  "_id": {
+    "$oid": "601f64f37758920008f8c2b9"
+  },
+  "name": "fakeUserMock",
+  "email": "ctovar@abexus.com",
+  "password": "$2b$10$o3suqvST2R2wfJ4cx7coneBYsci9J9UheVlbu4AINi9ZRQM4YrY6m"
+},{
+  "_id": {
+    "$oid": "601fffec129e0b00087d2897"
+  },
+  "name": "Jefferson",
+  "email": "crizy182@gmail.com",
+  "password": "$2b$10$CRFnjzyK4VscuEoGHMw.wuWdxO2E1ht183Qou0IhG4FNY4pD008DK"
+}]
