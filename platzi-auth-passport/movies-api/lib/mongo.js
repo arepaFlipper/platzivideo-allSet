@@ -21,6 +21,8 @@ class MongoLib {
             reject(err);
           }
 
+          console.log('mongo.js - MONGO_URI')
+          console.log(MONGO_URI)
           console.log('Connected succesfully to mongo');
           resolve(this.client.db(this.dbName));
         });

@@ -25,19 +25,18 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('createUser', (userData) => {
-    cy.contains('Crear una cuenta').click()
-    cy.get('#name').type(userData.name)
-    cy.get('#title').type(userData.company)
-    cy.get('#email2').type(userData.email)
-    cy.get('#password2').type(userData.password)
-    cy.contains('.button', 'Registrarse').click()
+    cy.contains('Regístrate').click()
+    cy.get(`[name="name"]`).type(userData.name)
+    cy.get(`[name="email"]`).type(userData.email)
+    cy.get(`[name="password"]`).type(userData.password)
+    cy.contains('.button', 'Registrarme').click()
     cy.wait(3000)
-    cy.get('.error-msg').should('not.exist')
+    cy.contains('h2','Inicia sesión').should('exist')
 })
 
 Cypress.Commands.add('loginUser', (username, password) => {
-    cy.get('#email1').type(username)
-    cy.get('#password1').type(password)
-    cy.contains('.button', 'Ingresar').click()
+    cy.get('[name="email"]').type(username)
+    cy.get('[name="password"]').type(password)
+    cy.contains('.button', 'Iniciar sesión').click()
     cy.wait(3000)
 })
