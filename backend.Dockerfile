@@ -1,8 +1,8 @@
-FROM node:10-alpine
+FROM node
 
-WORKDIR /srv/app
+WORKDIR /srv/app/
 
-COPY . .
+COPY ./platzi-auth-passport/movies-api /srv/app
 
 RUN npm install
 
