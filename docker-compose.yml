@@ -35,13 +35,23 @@ services:
       ports:
         - 3000:3000
 
-    # db-client:
-    #     container_name: db-client
-    #     image: "mongoclient/mongoclient:4.0.0"
-    #     # restart: always
-    #     ports: 
-    #         - "3000:3000"
-    #     depends_on:
-    #       - web
-    #     environment: 
-    #         - ROOT_URL= http://mongo:27017/admin
+    testing:
+      container_name: test_cypress
+      build:
+        context: .
+        # the Docker image to use from https://github.com/cypress-io/cypress-docker-images
+        dockerfile: ./cypress.Dockerfile
+      image: cypress
+      depends_on:
+        - web
+      environment:
+        # pass base url to test pointing at the web application
+        - CYPRESS_baseUrl=http://web:3000
+        - DISPLAY
+      # share the current folder as volume to avoid copying
+      working_dir: /e2e
+      volumes:
+        - ./e2e:/e2e
+        - /tmp/.X11-unix:/tmp/.X11-unix
+      entrypoint: cypress open --project /e2e
+    
