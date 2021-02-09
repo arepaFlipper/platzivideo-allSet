@@ -3,7 +3,7 @@
 Example project taken from Escuela de JavaScript courses to implement de testing end-to-end using Cypress.
 
 <div align="center">
-    <img src="./e2e/Screenshot1.png">
+    <img src="./e2e/Screenshot2.png">
 </div>
 
 ## The problem

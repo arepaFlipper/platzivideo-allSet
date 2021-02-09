@@ -33,6 +33,16 @@ describe('Login tests', () => {
     });
   });
 
+  it('must logout a user', () => {
+    cy.get('@userData').then((userData)=>{
+      cy.loginUser(userData.email, userData.password)
+    });
+    cy.visit('/#logout')
+    // cy.get('[href="#logout"]').click()
+    cy.wait(3000)
+    cy.contains('.main__title', '¿Qué quieres ver hoy?').should('not.be.visible')
+  });
+
   after(() => {
     cy.log('All tests done')
   })

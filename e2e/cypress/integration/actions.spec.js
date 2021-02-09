@@ -26,6 +26,10 @@ describe("Action tests", () => {
     cy.contains("h3", "Mi lista").should("not.exist");
   });
 
+  it("scooches the carousel items", () => {
+    cy.get('.carousel-item').eq(0).trigger("mouseover").wait(3000);
+  });
+
   it("should play the movie", () => {
     cy.get('.carousel-item').eq(0).trigger('mouseover');
     cy.get(`[alt="Play Icon"]`).eq(0).click();
