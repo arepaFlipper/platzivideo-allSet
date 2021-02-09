@@ -2,6 +2,10 @@
 
 Example project taken from Escuela de JavaScript courses to implement de testing end-to-end using Cypress.
 
+<div align="center">
+    <img src="./e2e/Screenshot1.png">
+</div>
+
 ## The problem
 You want to execute the Platzivideo project, but it requires to have a deployed API and a mongoDB instance developed from "curso de Backend con Node.js" and "Curso de Autenticación con Passport.js", by this method we would need to use some sensitive credentials in order to show the tests.
 
