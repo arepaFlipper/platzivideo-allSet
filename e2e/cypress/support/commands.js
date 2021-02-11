@@ -26,9 +26,9 @@
 
 Cypress.Commands.add('createUser', (userData) => {
     cy.contains('Regístrate').click()
-    cy.get(`[name="name"]`).type(userData.name)
-    cy.get(`[name="email"]`).type(userData.email)
-    cy.get(`[name="password"]`).type(userData.password)
+    cy.get(`[name="name"]`).type(userData.name || "")
+    cy.get(`[name="email"]`).type(userData.email || "")
+    cy.get(`[name="password"]`).type(userData.password || " ")
     cy.contains('.button', 'Registrarme').click()
     cy.wait(3000)
     cy.contains('h2','Inicia sesión').should('exist')
