@@ -14,12 +14,18 @@ describe("Login tests", () => {
     cy.visit("/");
   });
 
+  it("should display a sign-Up form", () => {
+    cy.contains("a", "Regístrate").click();
+    cy.wait(3000);
+    cy.contains("h2", "Regístrate").should("be.visible");
+  });
+
   it("should display a forgot password form", () => {
     cy.contains("a", "Olvidé mi contraseña").click();
     cy.contains("h1", "Ingresa tu email").should("be.visible");
     cy.wait(3000);
   });
-
+  
   it("should sign up a user", () => {
     cy.get("@userData").then((userData) => {
       cy.createUser(userData);
@@ -117,6 +123,13 @@ describe("Login tests", () => {
       cy.contains(".main__title", "¿Qué quieres ver hoy?").should(
         "not.be.visible"
       );
+    });
+  });
+
+  it('should login the username in uppercase', () => {
+    cy.get("@userData").then((userData) => {
+      cy.loginUser(userData.email.toUpperCase(), userData.password);
+      cy.contains(".main__title", "¿Qué quieres ver hoy?").should("be.visible");
     });
   });
 
