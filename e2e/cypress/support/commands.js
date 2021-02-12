@@ -41,33 +41,26 @@ Cypress.Commands.add('loginUser', (username, password) => {
     cy.wait(3000)
 })
 
-Cypress.Commands.add('topIsWithinViewport', { prevSubject: true }, subject => {
-    const windowInnerWidth = Cypress.config(`viewportWidth`);
-  
-    const bounding = subject[0].getBoundingClientRect();
-  
-    const rightBoundOfWindow = windowInnerWidth;
-  
-    expect(bounding.top).to.be.at.least(0);
-    expect(bounding.left).to.be.at.least(0);
-    expect(bounding.right).to.be.lessThan(rightBoundOfWindow);
-  
-    return subject;
+Cypress.Commands.add('isNotInViewport', element => {
+  cy.get(element).then($el => {
+    const bottom = Cypress.$(cy.state('window')).height()
+    const rect = $el[0].getBoundingClientRect()
+
+    expect(rect.top).to.be.greaterThan(bottom)
+    expect(rect.bottom).to.be.greaterThan(bottom)
+    expect(rect.top).to.be.greaterThan(bottom)
+    expect(rect.bottom).to.be.greaterThan(bottom)
   })
-  
-  Cypress.Commands.add('isWithinViewport', { prevSubject: true }, subject => {
-    const windowInnerWidth = Cypress.config(`viewportWidth`);
-    const windowInnerHeight = Cypress.config(`viewportHeight`);
-  
-    const bounding = subject[0].getBoundingClientRect();
-  
-    const rightBoundOfWindow = windowInnerWidth;
-    const bottomBoundOfWindow = windowInnerHeight;
-  
-    expect(bounding.top).to.be.at.least(0);
-    expect(bounding.left).to.be.at.least(0);
-    expect(bounding.right).to.be.lessThan(rightBoundOfWindow);
-    expect(bounding.bottom).to.be.lessThan(bottomBoundOfWindow);
-  
-    return subject;
+})
+
+Cypress.Commands.add('isInViewport', element => {
+  cy.get(element).then($el => {
+    const bottom = Cypress.$(cy.state('window')).height()
+    const rect = $el[0].getBoundingClientRect()
+
+    expect(rect.top).not.to.be.greaterThan(bottom)
+    expect(rect.bottom).not.to.be.greaterThan(bottom)
+    expect(rect.top).not.to.be.greaterThan(bottom)
+    expect(rect.bottom).not.to.be.greaterThan(bottom)
   })
+})

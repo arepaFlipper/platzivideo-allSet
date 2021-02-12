@@ -30,10 +30,18 @@ describe("Action tests", () => {
     cy.get('.carousel-item').eq(0).trigger("mouseover").wait(3000);
   });
 
+  it("searches a movie", ()=> {
+    const match = "Fortress"
+    cy.get(`[placeholder="Buscar..."]`).type(match).type(`{enter}`)
+    cy.get(".carousel-item").eq(1).find('.carousel-item__details--title').contains(match)
+  })
+
   it("should play the movie", () => {
     cy.get('.carousel-item').eq(0).trigger('mouseover');
     cy.get(`[alt="Play Icon"]`).eq(0).click();
     cy.wait(3000)
     cy.url().should('include','/player/')
-});
+  });
+
+
 });
